@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="VideoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视频名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHx-0b-7vV">
+                        <rect key="frame" x="10" y="10" width="300" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="TBp-6O-xwf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Urc-Wg-QKU" customClass="UIImageView">
+                        <rect key="frame" x="10" y="35" width="300" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nv9-CP-JjY">
+                                <rect key="frame" x="132" y="57" width="36" height="36"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.0" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="2ic-r3-obg"/>
+                                    <constraint firstAttribute="height" constant="36" id="XyO-G1-ghW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="387-8o-Xhp"/>
+                            <constraint firstItem="Nv9-CP-JjY" firstAttribute="centerY" secondItem="Urc-Wg-QKU" secondAttribute="centerY" id="Nsp-lG-eB8"/>
+                            <constraint firstItem="Nv9-CP-JjY" firstAttribute="centerX" secondItem="Urc-Wg-QKU" secondAttribute="centerX" id="vgb-go-Bd9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Urc-Wg-QKU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="04V-zp-0ir"/>
+                    <constraint firstItem="Urc-Wg-QKU" firstAttribute="top" secondItem="eHx-0b-7vV" secondAttribute="bottom" constant="10" id="3uv-e8-BJd"/>
+                    <constraint firstItem="eHx-0b-7vV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="iUI-FN-svN"/>
+                    <constraint firstItem="eHx-0b-7vV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rFv-we-fVq"/>
+                    <constraint firstAttribute="trailing" secondItem="Urc-Wg-QKU" secondAttribute="trailing" constant="10" id="xgh-n7-2Hx"/>
+                    <constraint firstAttribute="trailing" secondItem="eHx-0b-7vV" secondAttribute="trailing" constant="10" id="xi5-zi-mNl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="videoBackView" destination="Urc-Wg-QKU" id="1o3-jX-KDG"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="84"/>
+        </tableViewCell>
+    </objects>
+</document>

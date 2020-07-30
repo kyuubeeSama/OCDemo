@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>标题</title>
+</head>
+
+<body>
+  <div style="color: white;background-color:black;width:100px;height:100px;margin-left: 100px;margin-top: 200px;"
+    onclick="showalert()">按钮
+  </div>
+  <div style="color: white;background-color:black;width:100px;height:100px;margin-left: 100px;margin-top: 30px;"
+    onclick="showconfirm()">confirm
+  </div>
+  <img
+    src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566463509659&di=c1d1f270bf8e0d69a6cbe01fabfbc7d7&imgtype=0&src=http%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FF0ia7S03R9rBxzF51Uj2rBxS5czVyTRYia2Y018uIsmqsfzAmNJz5w1Z7flQsWjZVdf9z0zoIFOic8j9uR5hxgNQw%2F640%3Fwx_fmt%3Dpng"
+    id="qrcode" width="100px" height="100px">
+
+  <div style="color: white;background-color:black;width:100px;height: 100px;margin-top: 20px;" onclick="message()">
+    与原生交互
+  </div>
+  <script type="text/javascript">
+    function showalert() {
+      var imageValue = document.getElementById('qrcode').src;
+      alert(imageValue);
+    }
+    function showconfirm() {
+      confirm("输入框");
+    }
+    function message(messsage) {
+      // var messsage = "小妹妹";
+      var json = { data: "小妹妹" };
+      // window.webkit.messageHandlers.<name>.postMessage(<messageBody>)
+      window.webkit.messageHandlers.sendmessage.postMessage(json);
+    }
+  </script>
+</body>
+
+</html>
