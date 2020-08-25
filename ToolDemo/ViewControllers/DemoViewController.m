@@ -43,14 +43,15 @@
     
 //    [self createView];
 //    [self requestTest];
-    self.view.backgroundColor = [UIColor blackColor];
-    UIImageView *imageView = [[UIImageView alloc]init];
-    [self.view addSubview:imageView];
-    imageView.center = self.view.center;
-    imageView.bounds = CGRectMake(0, 0, 50, 50);
+//    self.view.backgroundColor = [UIColor blackColor];
+//    UIImageView *imageView = [[UIImageView alloc]init];
+//    [self.view addSubview:imageView];
+//    imageView.center = self.view.center;
+//    imageView.bounds = CGRectMake(0, 0, 50, 50);
 //    imageView.image = [UIImage imageNamed:@"tab_index"];
 //    imageView.image = [self makeRoundImage:[UIImage imageNamed:@"tab_index"]];
-    imageView.image = [UIImage imageWithBorder:5 color:[UIColor whiteColor] image:[UIImage imageNamed:@"tab_index"]];
+//    imageView.image = [UIImage imageWithBorder:5 color:[UIColor whiteColor] image:[UIImage imageNamed:@"tab_index"]];
+    [self shadow];
 }
 
 -(void)requestTest{

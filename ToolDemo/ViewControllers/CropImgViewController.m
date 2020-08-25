@@ -11,11 +11,9 @@
 #import "UIImage+Crop.h"
 #import "Masonry.h"
 #import "TZImagePickerController.h"
-#import "ZYQAssetPickerController.h"
 @interface CropImgViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate,TZImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *ImageView;
-
 
 @end
 
@@ -45,24 +43,6 @@
     }];
     [self presentViewController:VC animated:YES completion:nil];
      */
-    ZYQAssetPickerController *picker = [[ZYQAssetPickerController alloc] init];
-       picker.maximumNumberOfSelection = 5;
-       picker.assetsFilter = ZYQAssetsFilterAllAssets;
-       picker.showEmptyGroups=NO;
-       picker.delegate=self;
-       picker.selectionFilter = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
-           
-           if ([(ZYQAsset*)evaluatedObject mediaType]==ZYQAssetMediaTypeVideo) {
-               NSTimeInterval duration = [(ZYQAsset*)evaluatedObject duration];
-               return duration >= 5;
-           } else {
-               return YES;
-           }
-
-           
-       }];
-       
-       [self presentViewController:picker animated:YES completion:NULL];
 }
 
 - (IBAction)fileToolBtnClick:(id)sender {
@@ -79,11 +59,6 @@
         con.ovalClip = YES;
         [self presentViewController:con animated:YES completion:nil];
     }];
-}
-
-- (void)cropImageDidFinishedWithImage:(UIImage *)image {
-    NSLog(@"%f,%f",image.size.width,image.size.height);
-    self.ImageView.image = image;
 }
 
 /*

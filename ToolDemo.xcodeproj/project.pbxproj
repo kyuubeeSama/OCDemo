@@ -13,7 +13,6 @@
 		A907C9F22216961C00C45123 /* KVO1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A907C9F02216961C00C45123 /* KVO1ViewController.m */; };
 		A907C9F32216961C00C45123 /* KVO1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A907C9F12216961C00C45123 /* KVO1ViewController.xib */; };
 		A907C9F72216B34400C45123 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94C99C5209083EA00BA062E /* SystemConfiguration.framework */; };
-		A910E37F22C30D0200078E0A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A910E37E22C30D0200078E0A /* WebViewController.m */; };
 		A910E39B22C3139100078E0A /* 竞价列表.htm in Resources */ = {isa = PBXBuildFile; fileRef = A910E38E22C3139100078E0A /* 竞价列表.htm */; };
 		A9149EEE2318BB250030C47D /* EchartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9149EED2318BB250030C47D /* EchartsViewController.m */; };
 		A919031F2194408800B8CC97 /* WaveAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A919031E2194408800B8CC97 /* WaveAnimationViewController.m */; };
@@ -238,22 +237,6 @@
 		A907C9EF2216961C00C45123 /* KVO1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVO1ViewController.h; sourceTree = "<group>"; };
 		A907C9F02216961C00C45123 /* KVO1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVO1ViewController.m; sourceTree = "<group>"; };
 		A907C9F12216961C00C45123 /* KVO1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KVO1ViewController.xib; sourceTree = "<group>"; };
-		A908213F228BE73E00DE1B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		A9082141228BE74500DE1B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A9082143228BE74500DE1B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A908214D228BE74600DE1B34 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
-		A908214E228BE74600DE1B34 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
-		A9082150228BE74600DE1B34 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
-		A9082151228BE74600DE1B34 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
-		A9082153228BE74600DE1B34 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
-		A9082154228BE74600DE1B34 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
-		A9082156228BE74700DE1B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A9082158228BE74700DE1B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9082159228BE74700DE1B34 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		A9082165228BF16F00DE1B34 /* MyTableRowControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableRowControl.h; sourceTree = "<group>"; };
-		A9082166228BF16F00DE1B34 /* MyTableRowControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableRowControl.m; sourceTree = "<group>"; };
-		A910E37D22C30D0200078E0A /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		A910E37E22C30D0200078E0A /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		A910E38E22C3139100078E0A /* 竞价列表.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "竞价列表.htm"; sourceTree = "<group>"; };
 		A9149EEC2318BB240030C47D /* EchartsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchartsViewController.h; sourceTree = "<group>"; };
 		A9149EED2318BB250030C47D /* EchartsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EchartsViewController.m; sourceTree = "<group>"; };
@@ -627,34 +610,6 @@
 			path = CropImage;
 			sourceTree = "<group>";
 		};
-		A908213D228BE73E00DE1B34 /* ToolWatch */ = {
-			isa = PBXGroup;
-			children = (
-				A908213E228BE73E00DE1B34 /* Interface.storyboard */,
-				A9082141228BE74500DE1B34 /* Assets.xcassets */,
-				A9082143228BE74500DE1B34 /* Info.plist */,
-			);
-			path = ToolWatch;
-			sourceTree = "<group>";
-		};
-		A908214C228BE74600DE1B34 /* ToolWatch Extension */ = {
-			isa = PBXGroup;
-			children = (
-				A908214D228BE74600DE1B34 /* InterfaceController.h */,
-				A908214E228BE74600DE1B34 /* InterfaceController.m */,
-				A9082150228BE74600DE1B34 /* ExtensionDelegate.h */,
-				A9082151228BE74600DE1B34 /* ExtensionDelegate.m */,
-				A9082153228BE74600DE1B34 /* NotificationController.h */,
-				A9082154228BE74600DE1B34 /* NotificationController.m */,
-				A9082156228BE74700DE1B34 /* Assets.xcassets */,
-				A9082158228BE74700DE1B34 /* Info.plist */,
-				A9082159228BE74700DE1B34 /* PushNotificationPayload.apns */,
-				A9082165228BF16F00DE1B34 /* MyTableRowControl.h */,
-				A9082166228BF16F00DE1B34 /* MyTableRowControl.m */,
-			);
-			path = "ToolWatch Extension";
-			sourceTree = "<group>";
-		};
 		A910E38022C312C800078E0A /* other */ = {
 			isa = PBXGroup;
 			children = (
@@ -814,8 +769,6 @@
 				A9F8AC322410EE22000E7698 /* Video */,
 				A919031D2194408800B8CC97 /* WaveAnimationViewController.h */,
 				A919031E2194408800B8CC97 /* WaveAnimationViewController.m */,
-				A910E37D22C30D0200078E0A /* WebViewController.h */,
-				A910E37E22C30D0200078E0A /* WebViewController.m */,
 				A9F26E7B22753B5800B5836E /* WkWebViewController.h */,
 				A9F26E7C22753B5800B5836E /* WkWebViewController.m */,
 				A9F44DC0229250AF00833BB0 /* YaoViewController.h */,
@@ -1094,8 +1047,6 @@
 			isa = PBXGroup;
 			children = (
 				A9DA392E2079FFD60089BD6A /* ToolDemo */,
-				A908213D228BE73E00DE1B34 /* ToolWatch */,
-				A908214C228BE74600DE1B34 /* ToolWatch Extension */,
 				A960BF33230A32C3008012BC /* ToolDemoTests */,
 				A9DA392D2079FFD60089BD6A /* Products */,
 				A94C99C0209083D500BA062E /* Frameworks */,
@@ -1591,7 +1542,6 @@
 				A9F26E87227686F900B5836E /* UploadFileTableViewCell.m in Sources */,
 				A9F26E8E2276882D00B5836E /* FileTool.m in Sources */,
 				A9C86EA221BE0F56002A40EC /* DemoViewController.m in Sources */,
-				A910E37F22C30D0200078E0A /* WebViewController.m in Sources */,
 				A9B967E4243C55D4002E1F1B /* AudioViewController.m in Sources */,
 				A9F8AC412410F178000E7698 /* VideoTableViewCell.m in Sources */,
 				A9BC431A244192FC000B469C /* ImgageSolveViewController.m in Sources */,
@@ -1630,14 +1580,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A908213E228BE73E00DE1B34 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A908213F228BE73E00DE1B34 /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
 		A9DA39352079FFD60089BD6A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

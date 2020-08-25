@@ -2,36 +2,54 @@ source 'https://gitee.com/mirrors/CocoaPods-Specs.git'
 platform :ios, '9.0'
 
 target "ToolDemo" do
-
+  # 网络请求
   pod 'AFNetworking'
+  # 界面适配
   pod 'Masonry'
+  # 图片加载
   pod 'SDWebImage'
+  # 下拉刷新
   pod 'MJRefresh'
-  pod 'Masonry'
+  # 键盘控制
   pod 'IQKeyboardManager'
+  # 加载提示
   pod 'MBProgressHUD'
-  pod 'ZYQAssetPickerController'
+  # 数据库
   pod 'FMDB'
+  # 网络请求
   pod 'Reachability'
+  # websocket
   pod 'SocketRocket'
+  # tabbar圆形按钮
   pod 'MCTabBarController'
-  pod 'iOS-Echarts'
+  # 数据图
+  pod 'AAChartKit'
+  # gif图片
   pod 'FLAnimatedImage'
+  # 友盟相关
   pod 'UMCCommon'
   pod 'UMCSecurityPlugins'
   pod 'UMCPush'
   pod 'UMCShare/Social/ReducedWeChat'
   pod 'UMCShare/Social/ReducedQQ'
+  # 视频播放器
   pod 'SJVideoPlayer'
   pod 'SJBaseVideoPlayer'
+  # 多类型Tabbar
   pod 'CYLTabBarController'
-#啄木鸟调试工具
+  # 啄木鸟调试工具
   pod 'YKWoodpecker'
-  #YYimage
-  pod 'YYImage'
-#相册工具
+  # 相册工具
   pod 'TZImagePickerController'
+  # xpath工具
   pod 'hpple'
+  # RAC
+  pod 'ReactiveObjC'
+  # 界面优化相关
+  pod 'PINCache'
+  pod 'PINOperation'
+  pod 'PINRemoteImage'
+  pod 'Texture'
   use_frameworks!
   pod 'NSFWDetector'
 
