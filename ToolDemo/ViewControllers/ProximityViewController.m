@@ -18,7 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor=[UIColor whiteColor];
     self.navigationItem.title=@"距离传感器";
     // 打开距离传感器
     [UIDevice currentDevice].proximityMonitoringEnabled = YES;

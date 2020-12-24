@@ -14,6 +14,7 @@
 #import "UIView+Category.h"
 #import "RequestData.h"
 #import "UIImage+ImageRotate.h"
+#import "UIView+LXShadowPath.h"
 @interface DemoViewController ()
 
 @end
@@ -51,7 +52,16 @@
 //    imageView.image = [UIImage imageNamed:@"tab_index"];
 //    imageView.image = [self makeRoundImage:[UIImage imageNamed:@"tab_index"]];
 //    imageView.image = [UIImage imageWithBorder:5 color:[UIColor whiteColor] image:[UIImage imageNamed:@"tab_index"]];
-    [self shadow];
+//    [self shadow];
+    [self newShadow];
+}
+
+-(void)newShadow{
+    UIView *shadowView = [[UIView alloc]init];
+    [self.view addSubview:shadowView];
+    shadowView.frame = CGRectMake(50, 300, 200, 200);
+    shadowView.backgroundColor = [UIColor redColor];
+    [shadowView LX_SetShadowPathWith:[UIColor yellowColor] shadowOpacity:0.3 shadowRadius:2 shadowSide:LXShadowPathLeftRight shadowPathWidth:10];
 }
 
 -(void)requestTest{

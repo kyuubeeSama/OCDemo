@@ -13,6 +13,5 @@
 -(void)beginProgressWithTitle:(nullable NSString *)title;
 -(void)endProgress;
 -(void)showAlertWithTitle:(nullable NSString *)string;
--(void)shareWithDic:(nullable NSDictionary *)share;
 
 @end

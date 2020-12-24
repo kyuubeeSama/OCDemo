@@ -26,12 +26,6 @@ target "ToolDemo" do
   pod 'AAChartKit'
   # gif图片
   pod 'FLAnimatedImage'
-  # 友盟相关
-  pod 'UMCCommon'
-  pod 'UMCSecurityPlugins'
-  pod 'UMCPush'
-  pod 'UMCShare/Social/ReducedWeChat'
-  pod 'UMCShare/Social/ReducedQQ'
   # 视频播放器
   pod 'SJVideoPlayer'
   pod 'SJBaseVideoPlayer'
@@ -46,10 +40,9 @@ target "ToolDemo" do
   # RAC
   pod 'ReactiveObjC'
   # 界面优化相关
-  pod 'PINCache'
-  pod 'PINOperation'
-  pod 'PINRemoteImage'
   pod 'Texture'
+  #  空屏显示
+    pod 'LYEmptyView'
   use_frameworks!
   pod 'NSFWDetector'
 

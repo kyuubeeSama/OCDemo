@@ -168,7 +168,16 @@
     if (arr.count>0) {
         CIQRCodeFeature *feature = arr[0];
         NSString *QRCodeUrl = feature.messageString;
-        NSLog(@"%@",QRCodeUrl);
+        NSLog(@"二维码地址是%@",QRCodeUrl);
+        // 1. 将二维码地址存到剪贴板
+        // 2.使用alertviewcontroller将二维码弹出
+        UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+        pasteboard.string = QRCodeUrl;
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"警告" message:[NSString stringWithFormat:@"二维码地址是：%@。已复制到剪贴板",QRCodeUrl] preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"关闭" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction:cancelAction];
+        [self presentViewController:alert animated:YES completion:nil];
     }else{
         NSLog(@"图片错误");
         UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"错误二维码" message:@"该图片不包含二维码" preferredStyle:UIAlertControllerStyleAlert];
@@ -188,6 +197,16 @@
         AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex :0];
         //输出扫描字符串
         NSLog(@"%@",metadataObject.stringValue);
+        // 1. 将二维码地址存到剪贴板
+        // 2.使用alertviewcontroller将二维码弹出
+        UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+        pasteboard.string = metadataObject.stringValue;
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"警告" message:[NSString stringWithFormat:@"二维码地址是：%@。已复制到剪贴板",metadataObject.stringValue] preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"关闭" style:UIAlertActionStyleCancel handler:nil];
+        [alert addAction:cancelAction];
+        [self presentViewController:alert animated:YES completion:nil];
+
     }
 }
 

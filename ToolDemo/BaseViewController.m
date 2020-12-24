@@ -10,8 +10,7 @@
 #import "ShareView.h"
 #import "MBProgressHUD.h"
 #import "Masonry.h"
-#import <UMShare/UMShare.h>
-@interface BaseViewController ()<ShareViewDelegate>
+@interface BaseViewController ()
 
 @property(nonatomic,strong)MBProgressHUD *progress;
 
@@ -23,49 +22,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor whiteColor];
-//        self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
-}
-
--(void)shareWithDic:(NSDictionary *)share
-{
-    ShareView *view=[[ShareView alloc]init];
-    view.frame=CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-    view.delegate=self;
-    [self.view addSubview:view];
-}
-
--(void)shareBtnClickWithType:(int)type
-{
-    switch (type) {
-        case 0:
-            [self shareWebPageToPlatformType:UMSocialPlatformType_QQ];
-            break;
-        case 1:
-            [self shareWebPageToPlatformType:UMSocialPlatformType_Qzone];
-            break;
-        default:
-            break;
-    }
-}
-
-- (void)shareWebPageToPlatformType:(UMSocialPlatformType)platformType
-{
-    //创建分享消息对象
-    UMSocialMessageObject *messageObject = [UMSocialMessageObject messageObject];
-    //创建网页内容对象
-    UMShareWebpageObject *shareObject = [UMShareWebpageObject shareObjectWithTitle:@"分享标题" descr:@"分享内容描述" thumImage:[UIImage imageNamed:@"icon"]];
-    //设置网页地址
-    shareObject.webpageUrl =@"http://mobile.umeng.com/social";
-    //分享消息对象设置分享内容对象
-    messageObject.shareObject = shareObject;
-    //调用分享接口
-    [[UMSocialManager defaultManager] shareToPlatform:platformType messageObject:messageObject currentViewController:self completion:^(id data, NSError *error) {
-        if (error) {
-            NSLog(@"************Share fail with error %@*********",error);
-        }else{
-            NSLog(@"response data is %@",data);
-        }
-    }];
 }
 
 -(void)beginProgressWithTitle:(nullable NSString *)title

@@ -24,61 +24,56 @@ PODS:
   - FMDB/standard (2.7.5)
   - hpple (0.2.0)
   - IQKeyboardManager (6.5.6)
+  - LYEmptyView (1.3.1)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MCTabBarController (1.0.2)
   - MJRefresh (3.5.0)
   - NSFWDetector (1.1.0)
-  - PINCache (3.0.1-beta.8):
-    - PINCache/Arc-exception-safe (= 3.0.1-beta.8)
-    - PINCache/Core (= 3.0.1-beta.8)
-  - PINCache/Arc-exception-safe (3.0.1-beta.8):
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
     - PINCache/Core
-  - PINCache/Core (3.0.1-beta.8):
-    - PINOperation (~> 1.1.1)
-  - PINOperation (1.1.2)
-  - PINRemoteImage (3.0.0):
-    - PINRemoteImage/PINCache (= 3.0.0)
-  - PINRemoteImage/Core (3.0.0):
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.1)
+  - PINRemoteImage/Core (3.0.3):
     - PINOperation
-  - PINRemoteImage/iOS (3.0.0):
+  - PINRemoteImage/iOS (3.0.3):
     - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.0):
-    - PINCache (= 3.0.1-beta.8)
+  - PINRemoteImage/PINCache (3.0.3):
+    - PINCache (~> 3.0.3)
     - PINRemoteImage/Core
   - Reachability (3.2)
   - ReactiveObjC (3.1.1)
-  - SDWebImage (5.8.4):
-    - SDWebImage/Core (= 5.8.4)
-  - SDWebImage/Core (5.8.4)
-  - SJBaseVideoPlayer (3.3.8):
+  - SDWebImage (5.10.0):
+    - SDWebImage/Core (= 5.10.0)
+  - SDWebImage/Core (5.10.0)
+  - SJBaseVideoPlayer (3.4.5):
     - Masonry
-    - Reachability
-    - SJBaseVideoPlayer/AVPlayer (= 3.3.8)
-    - SJBaseVideoPlayer/Common (= 3.3.8)
+    - SJBaseVideoPlayer/AVPlayer (= 3.4.5)
+    - SJBaseVideoPlayer/Common (= 3.4.5)
     - SJUIKit/AttributesFactory (>= 0.0.0.38)
     - SJUIKit/ObserverHelper
     - SJUIKit/Queues
     - SJUIKit/SQLite3
-  - SJBaseVideoPlayer/AVPlayer (3.3.8):
+  - SJBaseVideoPlayer/AVPlayer (3.4.5):
     - Masonry
-    - Reachability
     - SJBaseVideoPlayer/Common
     - SJUIKit/AttributesFactory (>= 0.0.0.38)
     - SJUIKit/ObserverHelper
     - SJUIKit/Queues
     - SJUIKit/SQLite3
-  - SJBaseVideoPlayer/Common (3.3.8):
+  - SJBaseVideoPlayer/Common (3.4.5):
     - Masonry
-    - Reachability
     - SJBaseVideoPlayer/ResourceLoader
     - SJUIKit/AttributesFactory (>= 0.0.0.38)
     - SJUIKit/ObserverHelper
     - SJUIKit/Queues
     - SJUIKit/SQLite3
-  - SJBaseVideoPlayer/ResourceLoader (3.3.8):
+  - SJBaseVideoPlayer/ResourceLoader (3.4.5):
     - Masonry
-    - Reachability
     - SJUIKit/AttributesFactory (>= 0.0.0.38)
     - SJUIKit/ObserverHelper
     - SJUIKit/Queues
@@ -99,21 +94,21 @@ PODS:
     - YYModel
   - SJUIKit/SQLite3/Protocol (0.0.0.51):
     - YYModel
-  - SJVideoPlayer (3.2.6):
-    - SJBaseVideoPlayer (>= 3.3.3)
-    - SJVideoPlayer/Common (= 3.2.6)
-    - SJVideoPlayer/ControlLayers (= 3.2.6)
-    - SJVideoPlayer/ResourceLoader (= 3.2.6)
-  - SJVideoPlayer/Common (3.2.6):
+  - SJVideoPlayer (3.2.9):
+    - SJBaseVideoPlayer (>= 3.4.5)
+    - SJVideoPlayer/Common (= 3.2.9)
+    - SJVideoPlayer/ControlLayers (= 3.2.9)
+    - SJVideoPlayer/ResourceLoader (= 3.2.9)
+  - SJVideoPlayer/Common (3.2.9):
     - Masonry
-    - SJBaseVideoPlayer (>= 3.3.3)
+    - SJBaseVideoPlayer (>= 3.4.5)
     - SJUIKit/AttributesFactory
     - SJVideoPlayer/ResourceLoader
-  - SJVideoPlayer/ControlLayers (3.2.6):
-    - SJBaseVideoPlayer (>= 3.3.3)
+  - SJVideoPlayer/ControlLayers (3.2.9):
+    - SJBaseVideoPlayer (>= 3.4.5)
     - SJVideoPlayer/Common
-  - SJVideoPlayer/ResourceLoader (3.2.6):
-    - SJBaseVideoPlayer (>= 3.3.3)
+  - SJVideoPlayer/ResourceLoader (3.2.9):
+    - SJBaseVideoPlayer (>= 3.4.5)
   - SocketRocket (0.5.1)
   - Texture (3.0.0):
     - Texture/AssetsLibrary (= 3.0.0)
@@ -135,20 +130,8 @@ PODS:
     - Texture/Core
   - Texture/Video (3.0.0):
     - Texture/Core
-  - TZImagePickerController (3.4.2)
-  - UMCCommon (7.1.1)
-  - UMCPush (3.2.4):
-    - UMCCommon
-  - UMCSecurityPlugins (1.0.6)
-  - UMCShare/Core (6.9.10):
-    - UMCCommon
-  - UMCShare/Social/ReducedQQ (6.9.10):
-    - UMCCommon
-    - UMCShare/Core
-  - UMCShare/Social/ReducedWeChat (6.9.10):
-    - UMCCommon
-    - UMCShare/Core
-  - YKWoodpecker (1.2.8)
+  - TZImagePickerController (3.5.7)
+  - YKWoodpecker (1.2.9)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -159,14 +142,12 @@ DEPENDENCIES:
   - FMDB
   - hpple
   - IQKeyboardManager
+  - LYEmptyView
   - Masonry
   - MBProgressHUD
   - MCTabBarController
   - MJRefresh
   - NSFWDetector
-  - PINCache
-  - PINOperation
-  - PINRemoteImage
   - Reachability
   - ReactiveObjC
   - SDWebImage
@@ -175,11 +156,6 @@ DEPENDENCIES:
   - SocketRocket
   - Texture
   - TZImagePickerController
-  - UMCCommon
-  - UMCPush
-  - UMCSecurityPlugins
-  - UMCShare/Social/ReducedQQ
-  - UMCShare/Social/ReducedWeChat
   - YKWoodpecker
 
 SPEC REPOS:
@@ -191,6 +167,7 @@ SPEC REPOS:
     - FMDB
     - hpple
     - IQKeyboardManager
+    - LYEmptyView
     - Masonry
     - MBProgressHUD
     - MCTabBarController
@@ -208,10 +185,6 @@ SPEC REPOS:
     - SocketRocket
     - Texture
     - TZImagePickerController
-    - UMCCommon
-    - UMCPush
-    - UMCSecurityPlugins
-    - UMCShare
     - YKWoodpecker
     - YYModel
 
@@ -223,30 +196,27 @@ SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  LYEmptyView: b6d418cfa38b78df0cf243f9a9c25ccbdc399922
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MCTabBarController: 96b67360b8012d2194169c450b3167d30dac8cac
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   NSFWDetector: aefec2254932bdc933cccc9385abfe07ae36a7a1
-  PINCache: 534fd41d358d828dfdf227a0d327f3673a65e20b
-  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
-  PINRemoteImage: e2b89e19fb6e77ffc099f9d9f3b3fe1745e3f9f9
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
-  SJBaseVideoPlayer: 85f98136ab7b1d9595d8f85e3baee3801feb733e
+  SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
+  SJBaseVideoPlayer: 0ecccbae3bf6cad55187113247ea88f711bef276
   SJUIKit: bdf86af3648e70483c57e2bfe2fcc7531337fa54
-  SJVideoPlayer: fb53250dbf0ad2f95c963e9a42efb2057b9e9f27
+  SJVideoPlayer: 3cccc263bc03edccedc1b2be887b903e3dfca106
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
-  TZImagePickerController: cc0b74d5f01ab4cddcc24dcdfc3c7d68e6261056
-  UMCCommon: f455f92c125342e360d6ad9eafe484945351eeb5
-  UMCPush: 1edd856027dcf905333effb4040ace5d236a7316
-  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
-  UMCShare: a4a95fbdd61ecce5b6751d8c9ed9b519e80fcbc9
-  YKWoodpecker: c9c58ed903cde9507b0e9279c1c11abb119f32c2
+  TZImagePickerController: aff4b62eacce0194d2494ee4f42934bcff577cec
+  YKWoodpecker: 5433b65498b2afe2a4adc20642f76ff57e161f2a
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 6da00dcbcdd71a49d2c5c5e6f1a13f4d8921efa3
+PODFILE CHECKSUM: da01116402ee76ecdb3ff02b85d36511f267964c
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0.beta.2

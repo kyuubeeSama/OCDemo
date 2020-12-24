@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    //TODO:添加按钮，点击按钮发送推送
     if ([[UIApplication sharedApplication] currentUserNotificationSettings].types != UIUserNotificationTypeNone) {
         // 进入后台后发送通知
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sendLocalNotification) name:UIApplicationDidEnterBackgroundNotification object:nil];
