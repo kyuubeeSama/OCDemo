@@ -43,6 +43,10 @@ target "ToolDemo" do
   pod 'Texture'
   #  空屏显示
     pod 'LYEmptyView'
+  # 标题栏横向滑动
+  pod 'JXCategoryView'
+  pod 'JXPagingView/Pager'
+
   use_frameworks!
   pod 'NSFWDetector'
 

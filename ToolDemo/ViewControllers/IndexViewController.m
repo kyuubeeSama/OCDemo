@@ -42,7 +42,8 @@
 #import "RecordVideoViewController.h"
 #import "EditVideoViewController.h"
 #import "XPathViewController.h"
-#import "EmptyViewController.h"
+#import "CategoryViewController.h"
+#import "ListAndHeaderViewController.h"
 
 @interface IndexViewController () <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
 
@@ -69,14 +70,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSError *error = nil;
-    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://www.baidu.com"] options:NSDataReadingUncached error:&error];
-    if (error) {
-        NSLog(@"错误信息是%@",error.localizedDescription);
-    }
     // touchid 和 手势密码一套
-    self.listArr = [[NSMutableArray alloc] initWithArray:@[@"编辑视频",@"录制视频",@"avplayer",@"录音",@"动画",@"Quartz",@"弹幕",@"多媒体操作",@"视频播放", @"获取通讯录",  @"时间选择器", @"二维码&条形码",  @"距离传感器", @"图片相关操作", @"波浪动画", @"指纹验证", @"demo", @"图片放大查看", @"手势密码", @"KVO", @"图片裁剪", @"屏幕滑动显示菜单", @".9图片", @"系统相册", @"WKWebView", @"获取本地图片", @"摇一摇", @"推送测试", @"safari", @"tabbar测试", @"柱状图",@"xPath",@"空占用"]];
-    self.VCArr = [[NSMutableArray alloc] initWithArray:@[[EditVideoViewController description],[RecordVideoViewController description],[MediaPlayerViewController description],[AudioRecorderViewController description],[AnimationViewController description],[QuartzViewController description],[DanMuViewController description],[AudioViewController description],[VideoViewController description],[AddressListViewController description], [TimeDateViewController description],  [QRCodeViewController description], [ProximityViewController description], [ImageViewController description], [WaveAnimationViewController description], [TouchidViewController description], [DemoViewController description], [ImgScrollViewController description], [GestureViewController description], [KVO1ViewController description], [CropImgViewController description], [SliderViewController description], [PointNineViewController description], [FileListViewController description], [WkWebViewController description], [FileManagerViewController description], [YaoViewController description], [PushDemoViewController description], [SafariViewController description], [QYTabbarViewController description], [EchartsViewController description],[XPathViewController description],[EmptyViewController description]]];
+    self.listArr = [[NSMutableArray alloc] initWithArray:@[@"滑动切换列表",@"带头部的列表",@"编辑视频",@"录制视频",@"avplayer",@"录音",@"动画",@"Quartz",@"弹幕",@"多媒体操作",@"视频播放", @"获取通讯录",  @"时间选择器", @"二维码&条形码",  @"距离传感器", @"图片相关操作", @"波浪动画", @"指纹验证", @"demo", @"图片放大查看", @"手势密码", @"KVO", @"图片裁剪", @"屏幕滑动显示菜单", @".9图片", @"系统相册", @"WKWebView", @"获取本地图片", @"摇一摇", @"推送测试", @"safari", @"tabbar测试", @"柱状图",@"xPath"]];
+    self.VCArr = [[NSMutableArray alloc] initWithArray:@[
+         [CategoryViewController description],
+         [ListAndHeaderViewController description],
+         [EditVideoViewController description],
+         [RecordVideoViewController description],
+         [MediaPlayerViewController description],
+         [AudioRecorderViewController description],
+         [AnimationViewController description],
+         [QuartzViewController description],
+         [DanMuViewController description],
+         [AudioViewController description],
+         [VideoViewController description],
+         [AddressListViewController description],
+         [TimeDateViewController description],
+         [QRCodeViewController description],
+         [ProximityViewController description],
+         [ImageViewController description],
+         [WaveAnimationViewController description],
+         [TouchidViewController description],
+         [DemoViewController description],
+         [ImgScrollViewController description],
+         [GestureViewController description],
+         [KVO1ViewController description],
+         [CropImgViewController description],
+         [SliderViewController description],
+         [PointNineViewController description],
+         [FileListViewController description],
+         [WkWebViewController description],
+         [FileManagerViewController description],
+         [YaoViewController description],
+         [PushDemoViewController description],
+         [SafariViewController description],
+         [QYTabbarViewController description],
+         [EchartsViewController description],
+         [XPathViewController description]
+    ]];
     [self createTableView];
 }
 

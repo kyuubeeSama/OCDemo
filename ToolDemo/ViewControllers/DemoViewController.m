@@ -15,6 +15,7 @@
 #import "RequestData.h"
 #import "UIImage+ImageRotate.h"
 #import "UIView+LXShadowPath.h"
+#import <ReactiveObjC/ReactiveObjC.h>
 @interface DemoViewController ()
 
 @end
@@ -53,7 +54,8 @@
 //    imageView.image = [self makeRoundImage:[UIImage imageNamed:@"tab_index"]];
 //    imageView.image = [UIImage imageWithBorder:5 color:[UIColor whiteColor] image:[UIImage imageNamed:@"tab_index"]];
 //    [self shadow];
-    [self newShadow];
+//    [self newShadow];
+    [self createBtn];
 }
 
 -(void)newShadow{
@@ -87,17 +89,11 @@
         view.layer.shouldRasterize = YES;
         //超出父视图部分是否显示
         view.layer.masksToBounds = NO;
-        
         view.layer.borderWidth  = 0.0;
-        
         view.layer.opaque = 0.10;
-        
         view.layer.cornerRadius = 3.0;
-        
         //栅格化处理
         view.layer.rasterizationScale = [[UIScreen mainScreen]scale];
-        
-        
         //正常矩形
         UIBezierPath *path = [UIBezierPath bezierPathWithRect:view.bounds];
         view.layer.shadowPath = path.CGPath;
@@ -113,6 +109,9 @@
     button.imageView.contentMode = UIViewContentModeScaleAspectFill;
     [button setImage:[UIImage imageNamed:@"demo.jpg"] forState:UIControlStateNormal];
     [button setClipsToBounds:YES];
+    [[button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        NSLog(@"点击按钮"); 
+    }];
 }
 
 -(void)createView{

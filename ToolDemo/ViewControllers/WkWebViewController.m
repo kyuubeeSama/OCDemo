@@ -61,7 +61,7 @@
     self.webView.navigationDelegate = self;
     //    NSURL *url = [NSURL URLWithString:@"http://app.369qyh.com"];
     //    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
-    NSURL *url = [NSURL URLWithString:@"https://qqr522.com/zhaifuli/"];
+    NSURL *url = [NSURL URLWithString:@"http://369qyh.com/files/dianzishu/index.html"];
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
 //    NSString *filepath = [[NSBundle mainBundle]pathForResource:@"swiftindex" ofType:@"html"];
 //    NSURL *url = [NSURL fileURLWithPath:filepath];
@@ -82,6 +82,14 @@
     
 -(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     [self endProgress];
+    NSString *doc = @"document.body.outerHTML";
+    [webView evaluateJavaScript:doc
+                     completionHandler:^(id _Nullable htmlStr, NSError * _Nullable error) {
+        if (error) {
+           NSLog(@"JSError:%@",error);
+        }
+        NSLog(@"html:%@",htmlStr);
+    }] ;
 }
     
 -(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
