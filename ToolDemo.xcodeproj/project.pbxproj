@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		144DFA52860D670C41E08DA4 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144DF1BB8B4C90864724D7AA /* ListTableViewController.m */; };
-		5CF46C805006743B981679CA /* Pods_ToolDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7E0E12ED8FF5220FE9D32A /* Pods_ToolDemo.framework */; };
+		A6D734A4FEE38C0B2A066FB0 /* libPods-ToolDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CF9D3542FF90050D62DCF6 /* libPods-ToolDemo.a */; };
 		A90454822240DC72004663D1 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = A90454802240DC72004663D1 /* UIImage+Crop.m */; };
 		A90454832240DC72004663D1 /* CropImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90454812240DC72004663D1 /* CropImageController.m */; };
 		A907C9F22216961C00C45123 /* KVO1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A907C9F02216961C00C45123 /* KVO1ViewController.m */; };
@@ -238,6 +238,7 @@
 /* Begin PBXFileReference section */
 		144DF1BB8B4C90864724D7AA /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
 		144DF795AFA6C88AF07242EE /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		38CF9D3542FF90050D62DCF6 /* libPods-ToolDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToolDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A904547E2240DC72004663D1 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
 		A904547F2240DC72004663D1 /* CropImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImageController.h; sourceTree = "<group>"; };
 		A90454802240DC72004663D1 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
@@ -534,7 +535,6 @@
 		A9FF0211238390A0001A0028 /* QRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		A9FF0212238390A0001A0028 /* QRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 		C4381AC79251CF18F156B81F /* Pods-ToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToolDemo/Pods-ToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		DA7E0E12ED8FF5220FE9D32A /* Pods_ToolDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25F1CE4ACF895A7EFB87198 /* Pods-ToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToolDemo/Pods-ToolDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -563,7 +563,7 @@
 				A94C99C8209083F000BA062E /* CoreTelephony.framework in Frameworks */,
 				A94C99C4209083DC00BA062E /* CoreGraphics.framework in Frameworks */,
 				A94C99C2209083D500BA062E /* libsqlite3.tbd in Frameworks */,
-				5CF46C805006743B981679CA /* Pods_ToolDemo.framework in Frameworks */,
+				A6D734A4FEE38C0B2A066FB0 /* libPods-ToolDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,7 +729,7 @@
 				A94C99C5209083EA00BA062E /* SystemConfiguration.framework */,
 				A94C99C3209083DC00BA062E /* CoreGraphics.framework */,
 				A94C99C1209083D500BA062E /* libsqlite3.tbd */,
-				DA7E0E12ED8FF5220FE9D32A /* Pods_ToolDemo.framework */,
+				38CF9D3542FF90050D62DCF6 /* libPods-ToolDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1298,7 +1298,7 @@
 				A9DA39292079FFD60089BD6A /* Frameworks */,
 				A9DA392A2079FFD60089BD6A /* Resources */,
 				A9082164228BE74700DE1B34 /* Embed Watch Content */,
-				A424CF3B8C132A11927A59DF /* [CP] Embed Pods Frameworks */,
+				DF55AE50CE251C4F0553125B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1463,21 +1463,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A424CF3B8C132A11927A59DF /* [CP] Embed Pods Frameworks */ = {
+		DF55AE50CE251C4F0553125B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ToolDemo/Pods-ToolDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ToolDemo/Pods-ToolDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ToolDemo/Pods-ToolDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ToolDemo/Pods-ToolDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToolDemo/Pods-ToolDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToolDemo/Pods-ToolDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EFD5724F22373F83CE6AC2E3 /* [CP] Check Pods Manifest.lock */ = {

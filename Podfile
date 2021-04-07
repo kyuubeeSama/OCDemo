@@ -32,7 +32,7 @@ target "ToolDemo" do
   # 多类型Tabbar
   pod 'CYLTabBarController'
   # 啄木鸟调试工具
-  pod 'YKWoodpecker'
+#  pod 'YKWoodpecker'
   # 相册工具
   pod 'TZImagePickerController'
   # xpath工具
@@ -46,8 +46,5 @@ target "ToolDemo" do
   # 标题栏横向滑动
   pod 'JXCategoryView'
   pod 'JXPagingView/Pager'
-
-  use_frameworks!
-  pod 'NSFWDetector'
 
 end

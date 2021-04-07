@@ -61,7 +61,7 @@
     self.webView.navigationDelegate = self;
     //    NSURL *url = [NSURL URLWithString:@"http://app.369qyh.com"];
     //    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
-    NSURL *url = [NSURL URLWithString:@"http://369qyh.com/files/dianzishu/index.html"];
+    NSURL *url = [NSURL URLWithString:@"http://halihali2.com/acg/56124/1.html"];
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
 //    NSString *filepath = [[NSBundle mainBundle]pathForResource:@"swiftindex" ofType:@"html"];
 //    NSURL *url = [NSURL fileURLWithPath:filepath];

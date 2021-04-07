@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import NSFWDetector
-
+//import NSFWDetector
+/*
 @available(iOS 12.0, *)
 @objcMembers class SwiftDemo: NSObject {
     func sayHello(name :String) -> String {
@@ -37,3 +37,4 @@ import NSFWDetector
         return returnresult
     }
 }
+ */

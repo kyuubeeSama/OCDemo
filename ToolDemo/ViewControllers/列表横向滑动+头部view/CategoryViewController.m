@@ -28,6 +28,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self makeUI];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithTitle:@"刷新" style:UIBarButtonItemStylePlain target:self action:@selector(refreshBtnClick)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
+
+-(void)refreshBtnClick{
+    [self.listContainerView reloadData];
 }
 
 -(NSMutableArray *)listArr{

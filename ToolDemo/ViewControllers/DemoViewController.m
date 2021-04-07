@@ -8,7 +8,7 @@
 
 #import "DemoViewController.h"
 #import "Singleton.h"
-#import "NSFWDetector-Swift.h"
+//#import "NSFWDetector-Swift.h"
 //#import "ToolDemo-Swift.h"
 #import "UIColor+Category.h"
 #import "UIView+Category.h"
