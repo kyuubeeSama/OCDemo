@@ -164,6 +164,16 @@ CGFloat colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length
                            alpha:alpha];
 }
 
++(UIColor *)colorWithHexString:(NSString *)hexString andAlpha:(CGFloat)alpha{
+    CGFloat red, blue, green;
+    
+    NSString *colorString = [[hexString stringByReplacingOccurrencesOfString:@"#" withString:@""] uppercaseString];
+    red   = colorComponentFrom(colorString, 0, 2);
+    green = colorComponentFrom(colorString, 2, 2);
+    blue  = colorComponentFrom(colorString, 4, 2);
+    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+}
+
 + (UIColor *)colorWithHexString:(NSString *)hexString {
     CGFloat alpha, red, blue, green;
     

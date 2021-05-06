@@ -62,6 +62,7 @@ typedef enum : NSUInteger {
 + (UIColor *)colorWithHex:(UInt32)hex;
 + (UIColor *)colorWithHex:(UInt32)hex andAlpha:(CGFloat)alpha;
 + (UIColor *)colorWithHexString:(NSString *)hexString;
++(UIColor *)colorWithHexString:(NSString *)hexString andAlpha:(CGFloat)alpha;
 - (NSString *)HEXString;
 + (UIColor *)colorWithWholeRed:(CGFloat)red
                          green:(CGFloat)green

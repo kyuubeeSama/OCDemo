@@ -7,6 +7,7 @@ target "ToolDemo" do
   # 界面适配
   pod 'Masonry'
   # 图片加载
+  pod 'FLAnimatedImage'
   pod 'SDWebImage'
   # 下拉刷新
   pod 'MJRefresh'
@@ -46,5 +47,13 @@ target "ToolDemo" do
   # 标题栏横向滑动
   pod 'JXCategoryView'
   pod 'JXPagingView/Pager'
-
+  
+  # 区间滑块
+  pod "TTRangeSlider"
+  #侧滑菜单
+  pod 'CWLateralSlide'
+  # 图片查看
+  pod 'GKPhotoBrowser'
+  # 投屏
+  pod 'MRDLNA'
 end

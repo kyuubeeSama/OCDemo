@@ -203,6 +203,10 @@
 		A9F26E8B2276874600B5836E /* MessageChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F26E8A2276874600B5836E /* MessageChooseView.m */; };
 		A9F26E8E2276882D00B5836E /* FileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F26E8D2276882D00B5836E /* FileTool.m */; };
 		A9F44DC2229250AF00833BB0 /* YaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F44DC1229250AF00833BB0 /* YaoViewController.m */; };
+		A9F50B9926300C9E0089F334 /* HZWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F50B9126300C9E0089F334 /* HZWaitingView.m */; };
+		A9F50B9A26300C9E0089F334 /* HZPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F50B9326300C9E0089F334 /* HZPhotoBrowser.m */; };
+		A9F50B9B26300C9E0089F334 /* HZPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A9F50B9626300C9E0089F334 /* HZPhotoBrowser.bundle */; };
+		A9F50B9C26300C9E0089F334 /* HZPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F50B9726300C9E0089F334 /* HZPhotoBrowserView.m */; };
 		A9F63F2621C2336500F29893 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F63F2521C2336500F29893 /* Singleton.m */; };
 		A9F76A34223A35630091191F /* PointNineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F76A33223A35630091191F /* PointNineViewController.m */; };
 		A9F76A36223A36360091191F /* partner_type_pop_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A9F76A35223A36360091191F /* partner_type_pop_bg.png */; };
@@ -522,6 +526,16 @@
 		A9F44DB82291885300833BB0 /* ToolDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToolDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		A9F44DC0229250AF00833BB0 /* YaoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YaoViewController.h; sourceTree = "<group>"; };
 		A9F44DC1229250AF00833BB0 /* YaoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YaoViewController.m; sourceTree = "<group>"; };
+		A9F50B9126300C9E0089F334 /* HZWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZWaitingView.m; sourceTree = "<group>"; };
+		A9F50B9226300C9E0089F334 /* HZPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		A9F50B9326300C9E0089F334 /* HZPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowser.m; sourceTree = "<group>"; };
+		A9F50B9426300C9E0089F334 /* HZPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowserView.h; sourceTree = "<group>"; };
+		A9F50B9526300C9E0089F334 /* HZWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZWaitingView.h; sourceTree = "<group>"; };
+		A9F50B9626300C9E0089F334 /* HZPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HZPhotoBrowser.bundle; sourceTree = "<group>"; };
+		A9F50B9726300C9E0089F334 /* HZPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPhotoBrowserView.m; sourceTree = "<group>"; };
+		A9F50B9826300C9E0089F334 /* HZPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPhotoBrowser.h; sourceTree = "<group>"; };
+		A9F50BC6263015980089F334 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		A9F50BC72630170D0089F334 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A9F63F2421C2336500F29893 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		A9F63F2521C2336500F29893 /* Singleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		A9F76A32223A35630091191F /* PointNineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointNineViewController.h; sourceTree = "<group>"; };
@@ -1103,6 +1117,7 @@
 		A9DA392E2079FFD60089BD6A /* ToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A9F50BC2263014CB0089F334 /* config */,
 				A9BC435A24454667000B469C /* Video */,
 				A9B967E8243C5AEC002E1F1B /* audio */,
 				A910E38022C312C800078E0A /* other */,
@@ -1133,6 +1148,7 @@
 		A9DA3954207A02060089BD6A /* ThirdSDK */ = {
 			isa = PBXGroup;
 			children = (
+				A9F50B9026300C9E0089F334 /* ptotoBrowser */,
 				A904547D2240DC72004663D1 /* CropImage */,
 				A9956D9C2237A50000892624 /* slider */,
 				A9DA3955207A02060089BD6A /* ThirdHeader.h */,
@@ -1175,6 +1191,31 @@
 				A9F0A868243B0F54005D831D /* 29.jpg */,
 			);
 			path = gifImgs;
+			sourceTree = "<group>";
+		};
+		A9F50B9026300C9E0089F334 /* ptotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				A9F50B9626300C9E0089F334 /* HZPhotoBrowser.bundle */,
+				A9F50B9826300C9E0089F334 /* HZPhotoBrowser.h */,
+				A9F50B9326300C9E0089F334 /* HZPhotoBrowser.m */,
+				A9F50B9226300C9E0089F334 /* HZPhotoBrowserConfig.h */,
+				A9F50B9426300C9E0089F334 /* HZPhotoBrowserView.h */,
+				A9F50B9726300C9E0089F334 /* HZPhotoBrowserView.m */,
+				A9F50B9526300C9E0089F334 /* HZWaitingView.h */,
+				A9F50B9126300C9E0089F334 /* HZWaitingView.m */,
+			);
+			name = ptotoBrowser;
+			path = "../../../../../Desktop/ets-ios-app/quanyihui/quanyihui/Tool/ptotoBrowser";
+			sourceTree = "<group>";
+		};
+		A9F50BC2263014CB0089F334 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				A9F50BC6263015980089F334 /* Header.h */,
+				A9F50BC72630170D0089F334 /* PrefixHeader.pch */,
+			);
+			path = config;
 			sourceTree = "<group>";
 		};
 		A9F63F1D21C22FAF00F29893 /* Tool */ = {
@@ -1363,6 +1404,7 @@
 				A9BC433E24440534000B469C /* AnimationTransitionViewController.xib in Resources */,
 				A9F0A89C243B0F7E005D831D /* 28.jpg in Resources */,
 				A9F0A893243B0F7E005D831D /* 4.jpg in Resources */,
+				A9F50B9B26300C9E0089F334 /* HZPhotoBrowser.bundle in Resources */,
 				A9C6CCB7214E48730045EA99 /* line@2x.png in Resources */,
 				A9F0A88E243B0F7E005D831D /* 6.jpg in Resources */,
 				A9C202F621D4B391006572DD /* gesture_normal@2x.png in Resources */,
@@ -1519,10 +1561,12 @@
 			files = (
 				A907C9F22216961C00C45123 /* KVO1ViewController.m in Sources */,
 				A9956D9B223791C400892624 /* SliderViewController.m in Sources */,
+				A9F50B9A26300C9E0089F334 /* HZPhotoBrowser.m in Sources */,
 				A948EB7F2591E72900E6FACF /* DemoEmptyView.m in Sources */,
 				A9D4C5B022192C0700AE7E90 /* UIColor+Category.m in Sources */,
 				A9B967F9243DAB77002E1F1B /* BulletManager.m in Sources */,
 				A9BC4358244545A1000B469C /* MediaPlayerViewController.m in Sources */,
+				A9F50B9926300C9E0089F334 /* HZWaitingView.m in Sources */,
 				A9B967F2243DA82B002E1F1B /* DanMuViewController.m in Sources */,
 				A9AAD183243F0128004E85B3 /* GifViewController.m in Sources */,
 				A9BC433D24440534000B469C /* AnimationTransitionViewController.m in Sources */,
@@ -1567,6 +1611,7 @@
 				A9C86EA721BE4C05002A40EC /* ImgScrollViewController.m in Sources */,
 				A9C6CC89214E432C0045EA99 /* LightTool.m in Sources */,
 				A90FB97025EE28CD000C4DFF /* PagerListViewController.m in Sources */,
+				A9F50B9C26300C9E0089F334 /* HZPhotoBrowserView.m in Sources */,
 				A90454832240DC72004663D1 /* CropImageController.m in Sources */,
 				A964DA23207F2E8C00A1DA45 /* BaseViewController.m in Sources */,
 				A9BC433824440158000B469C /* ViewAnimationViewController.m in Sources */,
@@ -1820,8 +1865,10 @@
 					"$(PROJECT_DIR)/ToolDemo/ThirdSDK/Umeng/ushare/share/share_ios_6.9.1/UMSocialUI",
 					"$(PROJECT_DIR)/ToolDemo/ThirdSDK/Umeng/ushare/share/share_ios_6.9.1",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = /Users/liuqingyuan/Documents/ios/OCDemo/ToolDemo/config/PrefixHeader.pch;
 				INFOPLIST_FILE = ToolDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1858,8 +1905,10 @@
 					"$(PROJECT_DIR)/ToolDemo/ThirdSDK/Umeng/ushare/share/share_ios_6.9.1/UMSocialUI",
 					"$(PROJECT_DIR)/ToolDemo/ThirdSDK/Umeng/ushare/share/share_ios_6.9.1",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = /Users/liuqingyuan/Documents/ios/OCDemo/ToolDemo/config/PrefixHeader.pch;
 				INFOPLIST_FILE = ToolDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
